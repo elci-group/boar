@@ -1,0 +1,9 @@
+[[file]]
+path = ".claude/CLAUDE.md"
+tool = "claude"
+sha256 = "05bc61413686e27a83fd4212277c22cc35c9b33147940b83663e4bdc6f6285db"
+
+[[file]]
+path = "AGENTS.md"
+tool = "codex"
+sha256 = "c571632619ead038270350c310082d076f1838267e743de18fb309465af4980e"

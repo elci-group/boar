@@ -1,0 +1,62 @@
+{
+  "cluster_id": "0d40fad8-393f-438d-b7e0-33440463133e",
+  "version": "0.7.9",
+  "bump": "Patch",
+  "event_count": 306,
+  "started_at": "2026-08-24T14:18:07.192226600Z",
+  "ended_at": "2026-08-24T14:18:09.551198275Z",
+  "diff": {
+    "structural": 0.67081,
+    "api": 0.33125,
+    "deps": 0.30694446,
+    "runtime": 0.0,
+    "api_breaking": false,
+    "api_added": false,
+    "touched_paths": 7,
+    "api_touches": 3,
+    "api_signatures": 1,
+    "dependency_manifests": 3,
+    "dependency_nodes": 2,
+    "dependency_edges": 1,
+    "runtime_paths": 0,
+    "bundle": 0.0,
+    "parse_metadata": [
+      {
+        "file": "src/lib.rs",
+        "lang": "Rust",
+        "version": "2024",
+        "parser_used": "Ast",
+        "fallback_used": false,
+        "confidence": 0.95,
+        "version_match": "manifest"
+      },
+      {
+        "file": "src/lib.rs",
+        "lang": "Rust",
+        "version": "2024",
+        "parser_used": "Ast",
+        "fallback_used": false,
+        "confidence": 0.95,
+        "version_match": "manifest"
+      },
+      {
+        "file": "src/lib.rs",
+        "lang": "Rust",
+        "version": "2024",
+        "parser_used": "Ast",
+        "fallback_used": false,
+        "confidence": 0.95,
+        "version_match": "manifest"
+      }
+    ],
+    "ast_cache_hits": 2,
+    "ast_cache_misses": 1,
+    "ast_cache_entries": 9
+  },
+  "weight": {
+    "score": 0.39554736,
+    "api_breaking": false,
+    "api_added": false
+  },
+  "air_gapped": false
+}

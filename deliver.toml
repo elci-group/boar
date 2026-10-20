@@ -1,0 +1,64 @@
+[[file]]
+path = "Cargo.toml"
+required = true
+min_size_bytes = 100
+
+[[file]]
+path = "src/main.rs"
+required = true
+min_size_bytes = 100
+forbid_regex = ["todo!", "unimplemented!"]
+
+[[file]]
+path = "src/lib.rs"
+required = true
+min_size_bytes = 1000
+forbid_regex = ["todo!", "unimplemented!"]
+
+[[file]]
+path = "README.md"
+required = true
+min_size_bytes = 1000
+
+[[file]]
+path = "tests/ram_flow.rs"
+required = true
+min_size_bytes = 1000
+forbid_regex = ["todo!", "unimplemented!"]
+
+[[command]]
+name = "format"
+cmd = ["cargo", "fmt", "--", "--check"]
+expect_exit = 0
+timeout_secs = 120
+
+[[command]]
+name = "tests"
+cmd = ["cargo", "test", "--all-targets"]
+expect_exit = 0
+timeout_secs = 300
+stdout_contains = ["test result: ok"]
+
+[[command]]
+name = "clippy"
+cmd = ["cargo", "clippy", "--all-targets", "--", "-D", "warnings"]
+expect_exit = 0
+timeout_secs = 300
+
+[[command]]
+name = "status smoke test"
+cmd = ["cargo", "run", "--quiet", "--", "status"]
+expect_exit = 0
+timeout_secs = 120
+stdout_contains = ["BOAR Memory"]
+
+[[command]]
+name = "doctor pressure smoke test"
+cmd = ["cargo", "run", "--quiet", "--", "doctor"]
+expect_exit = 0
+timeout_secs = 120
+stdout_contains = ["BOAR Doctor", "pressure"]
+
+[git]
+no_uncommitted_changes = false
+no_untracked_files = false

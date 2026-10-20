@@ -1,0 +1,62 @@
+{
+  "cluster_id": "f3964a78-fea4-4d20-a125-c697bd7a95f2",
+  "version": "0.7.10",
+  "bump": "Patch",
+  "event_count": 364,
+  "started_at": "2026-08-28T10:15:30.076711994Z",
+  "ended_at": "2026-08-28T10:15:37.552220298Z",
+  "diff": {
+    "structural": 0.90606254,
+    "api": 0.0,
+    "deps": 0.0,
+    "runtime": 0.0,
+    "api_breaking": false,
+    "api_added": false,
+    "touched_paths": 180,
+    "api_touches": 0,
+    "api_signatures": 0,
+    "dependency_manifests": 0,
+    "dependency_nodes": 0,
+    "dependency_edges": 0,
+    "runtime_paths": 0,
+    "bundle": 0.0,
+    "parse_metadata": [
+      {
+        "file": "tests/ram_flow.rs",
+        "lang": "Rust",
+        "version": "2024",
+        "parser_used": "Ast",
+        "fallback_used": false,
+        "confidence": 0.95,
+        "version_match": "manifest"
+      },
+      {
+        "file": "tests/ram_flow.rs",
+        "lang": "Rust",
+        "version": "2024",
+        "parser_used": "Ast",
+        "fallback_used": false,
+        "confidence": 0.95,
+        "version_match": "manifest"
+      },
+      {
+        "file": "tests/ram_flow.rs",
+        "lang": "Rust",
+        "version": "2024",
+        "parser_used": "Ast",
+        "fallback_used": false,
+        "confidence": 0.95,
+        "version_match": "manifest"
+      }
+    ],
+    "ast_cache_hits": 2,
+    "ast_cache_misses": 1,
+    "ast_cache_entries": 10
+  },
+  "weight": {
+    "score": 0.3171219,
+    "api_breaking": false,
+    "api_added": false
+  },
+  "air_gapped": false
+}

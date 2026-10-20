@@ -1,0 +1,11 @@
+[project]
+name = "boar"
+
+[tools]
+claude = true
+codex = true
+
+[rules]
+documentation = true
+security = true
+testing = true
